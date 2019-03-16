@@ -1,33 +1,16 @@
-language: erlang
+language: smalltalk
+sudo: false
 
-notifications:
-  webhooks:
-    urls:
-      - https://webhooks.gitter.im/e/dd28fc6ec3cc9c66b330 # GsDevKit/gsApplicationTools room
-      - https://webhooks.gitter.im/e/c59e6bffa0b41a693676 # GsDevKit/chat (public)
-    on_success: always # options: [always|never|change] default: always
-    on_failure: always  # options: [always|never|change] default: always
-    on_start: false     # default: false
+os: linux
 
+smalltalk_config: .smalltalk.ston
 
-env:
-   - ST=GemStone-2.4.4.1
-#   - ST=GemStone-2.4.4.7
-#   - ST=GemStone-2.4.5
-   - ST=GemStone-2.4.6
-   - ST=GemStone-3.0.1 
-   - ST=GemStone-3.1.0.6
-   - ST=GemStone-3.2.0
-   - ST=GemStone-3.2.7
+smalltalk:
+   - GemStone-3.2.17
+   - GemStone-3.3.9
+   - GemStone-3.4.3
 
-install:
-   - export PROJECT_HOME="$(pwd)"
-   - cd $HOME
-   - wget -q -O builderCI.zip https://github.com/dalehenrich/builderCI/zipball/master
-   - unzip -q builderCI.zip
-   - cd dalehenrich-builderCI*
-   - source build_env_vars
-   - ln -s $PROJECT_HOME $GIT_PATH
-   - ./build_image.sh
+cache:
+  directories:
+    - $SMALLTALK_CI_CACHE
 
-script: $BUILDER_CI_HOME/testTravisCI.sh  # -verbose

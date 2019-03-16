@@ -1,0 +1,17 @@
+SmalltalkCISpec {
+  #loading : [
+   SCIMetacelloLoadSpec {
+      #baseline : 'GsApplicationTools',
+      #directory : 'repository',
+      #onWarningLog : true,
+      #load : [ 'CI' ],
+      #useLatestMetacello : true,
+      #platforms : [ #gemstone ]
+    }
+  ],
+  #testing : {
+      #include : {
+        #classes : [ #SentButNotImplementedTest , #UndefinedSymbolsTest ]
+      }
+  }
+}
