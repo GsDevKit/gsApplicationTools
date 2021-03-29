@@ -1,4 +1,4 @@
-*gsapplicationtools-serverv30
+*gsapplicationtools-breakpointv30
 enableRemoteBreakpointHandling
   "Enable remote Breakpoing handling"
 
@@ -7,7 +7,7 @@ enableRemoteBreakpointHandling
   self
     scriptLogEvent: 'enableRemoteBreakpointHandling: ' , self name
     object: self.
-  GsProcess _current breakpointLevel: 1.
+  Breakpoint trappable: true.
   GemToGemAnnouncement installStaticHandler.
   System _commitPrintingDiagnostics
     ifFalse: [ self error: 'Could not commit for GemToGemSignaling' ].
