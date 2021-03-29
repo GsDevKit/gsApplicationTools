@@ -13,6 +13,6 @@ scheduleBreakpointTask
           p := GsProcess _current.
           [ p convertToPortableStack ] fork.
           Processor yield ].
-      Breakpoint trappable: true.
+      GemServer enableBreakPoints.
       self breakpointMethod ])
     addToQueue: self

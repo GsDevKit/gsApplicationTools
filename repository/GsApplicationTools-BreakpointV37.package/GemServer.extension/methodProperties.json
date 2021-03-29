@@ -1,5 +1,5 @@
 {
 	"class" : {
-		 },
+		"enableBreakPoints" : "dkh 03/29/2021 15:48" },
 	"instance" : {
-		"enableRemoteBreakpointHandling" : "dkh 03/29/2021 14:11" } }
+		 } }
