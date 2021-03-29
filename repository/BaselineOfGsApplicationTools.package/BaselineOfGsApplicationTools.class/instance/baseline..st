@@ -42,7 +42,7 @@ baseline: spec
           with: [ spec requires: 'GsApplicationTools-Server' ];
         yourself ].
   spec
-    for: #(#'gs3.1.x' #'gs3.2.x' #'gs3.3.x' #'gs3.4.x' #'gs3.5.x' #'gs3.6.x')
+    for: #(#'gs3.1.x' #'gs3.2.x' #'gs3.3.x' #'gs3.4.x' #'gs3.5.x' #'gs3.6.x' #'gs3.7.x' #'gs3.8.x' #'gs3.9.x')
     do: [ 
       spec
         package: 'GsApplicationTools-ExampleV31'
