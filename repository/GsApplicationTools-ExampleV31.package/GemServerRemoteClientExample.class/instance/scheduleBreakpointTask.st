@@ -6,7 +6,7 @@ scheduleBreakpointTask
       sel := #'breakpointMethod'.
       cls := self class whichClassIncludesSelector: sel asString.
       meth := cls compiledMethodAt: sel.
-      meth setBreakAtStepPoint: 1.
+		GemServer setBreakIn: meth atStepPoint: 1.
       GsProcess usingNativeCode
         ifTrue: [ 
           | p |
