@@ -15,6 +15,6 @@ startGems
         ifTrue: [ 
           self
             error:
-              'Pid file exists for port or resource: ' , portOrResourceName printString
+              'Pid file exists ', pidFilePath printString, ' for port or resource: ' , portOrResourceName printString
                 , '. Try restart command.' ].
       self executeStartGemCommand: portOrResourceName ]
