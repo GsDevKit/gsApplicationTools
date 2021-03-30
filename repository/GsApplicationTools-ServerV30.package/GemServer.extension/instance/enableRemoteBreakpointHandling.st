@@ -7,7 +7,7 @@ enableRemoteBreakpointHandling
   self
     scriptLogEvent: 'enableRemoteBreakpointHandling: ' , self name
     object: self.
-  Breakpoint trappable: true.
+  self class enableBreakPoints.
   GemToGemAnnouncement installStaticHandler.
   System _commitPrintingDiagnostics
     ifFalse: [ self error: 'Could not commit for GemToGemSignaling' ].

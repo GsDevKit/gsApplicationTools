@@ -41,8 +41,17 @@ baseline: spec
         package: 'GsApplicationTools-ServerV30'
           with: [ spec requires: 'GsApplicationTools-Server' ];
         yourself ].
+   spec
+    for: #(#'gs3.0.x' #'gs3.1.x' #'gs3.2.x' #'gs3.3.x' #'gs3.4.x' #'gs3.5.x' #'gs3.6.x')
+    do: [ 
+      spec
+        package: 'GsApplicationTools-Server'
+          with: [ spec includes: 'GsApplicationTools-BreakpointV30' ];
+        package: 'GsApplicationTools-BreakpointV30'
+          with: [ spec requires: 'GsApplicationTools-Server' ];
+        yourself ].
   spec
-    for: #(#'gs3.1.x' #'gs3.2.x' #'gs3.3.x' #'gs3.4.x' #'gs3.5.x' #'gs3.6.x')
+    for: #(#'gs3.1.x' #'gs3.2.x' #'gs3.3.x' #'gs3.4.x' #'gs3.5.x' #'gs3.6.x' #'gs3.7.x' #'gs3.8.x' #'gs3.9.x')
     do: [ 
       spec
         package: 'GsApplicationTools-ExampleV31'
@@ -50,4 +59,13 @@ baseline: spec
         yourself.
       spec
         group: 'CI' with: #('GsApplicationTools-ExampleV31');
-        yourself ]
+        yourself ].
+ spec
+    for: #(#'gs3.7.x' #'gs3.8.x' #'gs3.9.x')
+    do: [ 
+      spec
+        package: 'GsApplicationTools-Server'
+          with: [ spec includes: 'GsApplicationTools-BreakpointV37' ];
+        package: 'GsApplicationTools-BreakpointV37'
+          with: [ spec requires: 'GsApplicationTools-Server' ];
+        yourself ].
