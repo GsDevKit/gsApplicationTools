@@ -9,4 +9,5 @@ scheduleTimeInLondonTask
         throughAll: 'Europe/London - ';
         upTo: Character space.
       '(from http://www.time.org), time in London is: ' , timeInLondon ])
+    expectedDelay: 600;
     addToQueue: self
