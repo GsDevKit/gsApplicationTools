@@ -1,4 +1,4 @@
-gsApplicationTools [![master branch:](https://travis-ci.org/GsDevKit/gsApplicationTools.png?branch=master)](https://travis-ci.org/GsDevKit/gsApplicationTools) 
+gsApplicationTools [![Build Status](https://github.com/GsDevKitgsApplicationTools/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/GsDevKit/gsApplicationTools/actions/workflows/ci.yml) 
 ==================
 
 
