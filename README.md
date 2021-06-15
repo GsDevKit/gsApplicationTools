@@ -1,4 +1,4 @@
-gsApplicationTools [![Build Status](https://github.com/GsDevKitgsApplicationTools/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/GsDevKit/gsApplicationTools/actions/workflows/ci.yml) 
+gsApplicationTools [![Build Status](https://github.com/GsDevKit/gsApplicationTools/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/GsDevKit/gsApplicationTools/actions/workflows/ci.yml) 
 ==================
 
 
