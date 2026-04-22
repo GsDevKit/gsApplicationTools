@@ -360,7 +360,7 @@ DESCRIPTION
 
     project entry --config=External                          \
                   --version=1.0.0                            \
-                  --repo=http://ss3.gemstone.com/ss/external \
+                  --repo=http://ss3.gemtalksystems.com/ss/external \
                   --loads=`#('Core')`                      \
                   /home/external
 
@@ -400,7 +400,7 @@ Project Entry Attributes
     reference from another project.
 
 EXAMPLES
-  project entry --config=External --version=1.0.0 --repo=http://ss3.gemstone.com/ss/external \
+  project entry --config=External --version=1.0.0 --repo=http://ss3.gemtalksystems.com/ss/external \
                --loads=`#('Core')` /home/external
 
   project entry --baseline=External --repo=github://dalehenrich/external:master/repository \
